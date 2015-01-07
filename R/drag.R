@@ -10,7 +10,11 @@ tangle_deps <- function() {
   )
 }
 
-tk_drag <- function(id, value, text, min, max) {
+tk_drag <- function(value, text, min = NULL, max = NULL, id = as_attr(text)) {
+  stopifnot(is.numeric(value))
+
+  text <- paste0(" ", text)
+
   slider <- htmltools::span(
     id = id,
     class = "TKAdjustableNumber",
@@ -24,3 +28,11 @@ tk_drag <- function(id, value, text, min, max) {
   htmltools::attachDependencies(slider, tangle_deps())
 }
 
+
+as_attr <- function(x) {
+  x <- tolower(x)
+  x <- gsub("[^a-zA-Z0-9_-]", "-", x)
+  x <- gsub("-+$", "", x)
+  x <- gsub("^-+", "", x)
+  x
+}
