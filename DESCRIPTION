@@ -1,8 +1,13 @@
 Package: tanglekit
-Title: What the Package Does (one line, title case)
+Title: Expose tangle.js controls in R.
 Version: 0.0.0.9000
-Authors@R: 'Hadley Wickham <h.wickham@gmail.com> [aut,cre]'
+Authors@R: as.person(c(
+    'Hadley Wickham <h.wickham@gmail.com> [aut,cre]',
+    'Bret Victor [aut,cph]',
+    'RStudio [cph]'
+    ))
 Description: What the package does (one paragraph)
 Depends: R (>= 3.1.2)
-License: GPL-3
+Imports: htmltools
+License: MIT + file LICENSE
 LazyData: true
