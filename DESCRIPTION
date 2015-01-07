@@ -6,7 +6,7 @@ Authors@R: as.person(c(
     'Bret Victor [aut,cph]',
     'RStudio [cph]'
     ))
-Description: What the package does (one paragraph)
+Description: Exposes Brett Victor's "explorable explanations made easy" to R.
 Depends: R (>= 3.1.2)
 Imports: htmltools
 License: MIT + file LICENSE
