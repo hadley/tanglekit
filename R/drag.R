@@ -20,12 +20,10 @@ tangle_deps <- function() {
 #'   multiple - collapsed to one -, and leading and trailing - dropped.
 #' @export
 #' @examples
-#' tk_drag(1, "pies")
-#' tk_drag(2, "hats")
+#' tk_drag(1, " pies")
+#' tk_drag(2, " hats")
 tk_drag <- function(value, text, min = NULL, max = NULL, id = as_attr(text)) {
   stopifnot(is.numeric(value))
-
-  text <- paste0(" ", text)
 
   slider <- htmltools::span(
     id = id,

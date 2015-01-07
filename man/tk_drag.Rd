@@ -21,7 +21,7 @@ multiple - collapsed to one -, and leading and trailing - dropped.}
 Create a tangle kit slider
 }
 \examples{
-tk_drag(1, "pies")
-tk_drag(2, "hats")
+tk_drag(1, " pies")
+tk_drag(2, " hats")
 }
 
