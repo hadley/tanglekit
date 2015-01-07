@@ -10,7 +10,7 @@ $.extend(tangleBinding, {
   initialize: function(el) {
     var id = $(el).attr("id");
     tangles[id] = new Tangle (document.documentElement, {
-      initialize: function () { this[id] = $(el).attr("data-value"); },
+      initialize: function () { this[id] = parseFloat($(el).attr("data-value")); },
       update:     function () { $(el).trigger("change"); }
     });
   },
